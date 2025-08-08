@@ -126,3 +126,30 @@ if (classe === "Mago") {
   console.log(`O poder físico de ${nomePersonagem} é sua maior arma.`);
 }
 
+// CAPÍTULO 2: Condicionais Compostas - A Encruzilhada
+console.log("CAPÍTULO 2: A Encruzilhada");
+
+// Decisão baseada no ouro para comprar equipamentos
+if (ouro >= 50) {
+  console.log(`Com ouro suficiente, ${nomePersonagem} compra equipamentos melhores!`);
+  forca += 5;
+  defesa += 3;
+  ouro -= 50;
+  console.log(`Força aumentada para ${forca} e defesa para ${defesa}. Ouro restante: ${ouro}`);
+} else {
+  console.log(`Sem ouro suficiente, ${nomePersonagem} deve confiar apenas em suas habilidades!`);
+  console.log(`A adversidade fortalece o espírito! Agilidade aumentada em 2 pontos.`);
+  agilidade += 2;
+}
+
+// Decisão baseada na experiência para evolução
+if (experiencia >= 1000) {
+  console.log(`A sabedoria acumulada se manifesta! ${nomePersonagem} sobe para o nível 2.`);
+  nivel++;
+  experiencia -= 1000;
+  vidaAtual = vidaMaxima; // restaura vida ao subir de nível
+  console.log(`Vida restaurada para ${vidaAtual}. Experiência restante: ${experiencia}\n`);
+} else {
+  console.log(`${nomePersonagem} ainda busca mais conhecimento e experiência.`);
+  console.log(`Experiência atual: ${experiencia}/1000\n`);
+}
