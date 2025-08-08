@@ -155,7 +155,7 @@ if (experiencia >= 1000) {
 }
 
 // CAPÍTULO 3: Condicionais Encadeadas - A Batalha Decisiva
-console.log("⚔️ CAPÍTULO 3: A Batalha Decisiva");
+console.log("CAPÍTULO 3: A Batalha Decisiva");
 
 if (vidaAtual <= 30) {
   console.log(`Com pouca vida, ${nomePersonagem} usa uma tática desesperada!`);
