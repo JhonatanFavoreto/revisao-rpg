@@ -148,7 +148,7 @@ if (experiencia >= 1000) {
   nivel++;
   experiencia -= 1000;
   vidaAtual = vidaMaxima; // restaura vida ao subir de nível
-  console.log(`Vida restaurada para ${vidaAtual}. Experiência restante: ${experiencia}\n`);
+  console.log(`Vida restaurada para ${vidaAtual}. Experiência restante: ${experiencia}`);
 } else {
   console.log(`${nomePersonagem} ainda busca mais conhecimento e experiência.`);
   console.log(`Experiência atual: ${experiencia}/1000`);
