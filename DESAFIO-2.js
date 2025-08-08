@@ -98,7 +98,7 @@ if (manaAtual >= manaMinimo) {
 // Decisão de comprar poção de mana
 if (moeda >= 15) {
     console.log(`${nomePersonagem} comprou uma poção de mana para se recuperar após a batalha.`);
-    manaAtual += 20; // valor hipotético
+    manaAtual += 20;
     moeda -= 15;
 } else {
     console.log(`${nomePersonagem} não tinha moedas suficientes para comprar uma poção de mana.`);
@@ -151,5 +151,40 @@ if (experiencia >= 1000) {
   console.log(`Vida restaurada para ${vidaAtual}. Experiência restante: ${experiencia}\n`);
 } else {
   console.log(`${nomePersonagem} ainda busca mais conhecimento e experiência.`);
-  console.log(`Experiência atual: ${experiencia}/1000\n`);
+  console.log(`Experiência atual: ${experiencia}/1000`);
 }
+
+// CAPÍTULO 3: Condicionais Encadeadas - A Batalha Decisiva
+console.log("⚔️ CAPÍTULO 3: A Batalha Decisiva");
+
+if (vidaAtual <= 30) {
+  console.log(`Com pouca vida, ${nomePersonagem} usa uma tática desesperada!`);
+  console.log("Ataque final com toda a força restante!");
+  poderInimigo -= (forca * 2);
+} else if (manaAtual >= 30 && classe === "Mago") {
+  console.log(`${nomePersonagem} canaliza todo seu poder mágico!`);
+  console.log("Uma magia devastadora");
+  poderInimigo -= (forca + 20);
+  manaAtual -= 30;
+} else if (agilidade >= 15) {
+  console.log(`Com grande agilidade, ${nomePersonagem} executa um ataque critico`);
+  poderInimigo -= forca;
+} else {
+  console.log(`Luta defensiva e calculada!`);
+  poderInimigo -= (forca / 2);
+  vidaAtual += 10;
+}
+
+console.log(`Poder do inimigo restante: ${poderInimigo}`);
+
+// EPÍLOGO - Consequências das decisões
+if (poderInimigo <= 0) {
+  console.log(`VITÓRIA ÉPICA! ${nomePersonagem} ganhou a batalha`);
+  experiencia += 500;
+  combatesVencidos++;
+  console.log(`Experiência aumentada para ${experiencia}. Combates vencidos: ${combatesVencidos}`);
+} else {
+  console.log(`A batalha foi dura, mas ${nomePersonagem} sobrevive para lutar outro dia.`);
+}
+
+console.log("FIM DO CAPÍTULO - Prepare-se para o próximo nível da aventura!");
