@@ -107,3 +107,22 @@ if (moeda >= 15) {
 // Atualização de status
 console.log(`Mana atual: ${manaAtual}`);
 console.log(`Moedas restantes: ${moeda}`);
+
+// CAPÍTULO 1: Condicionais Simples - O Aviso dos Anciões
+console.log("CAPÍTULO 1: O Aviso dos Anciões");
+
+if (nivel < 3) {
+  console.log(`Um ancião adverte: "Você ainda é jovem demais para esta missão, ${nomePersonagem}!"`);
+  console.log(`Mas ${nomePersonagem} ignora e decide prosseguir com sua coragem.`);
+}
+
+if (ouro >= 50) {
+  console.log(`As moedas no bolso de ${nomePersonagem}, atraindo o olhar em busca de mais.`);
+}
+
+if (classe === "Mago") {
+  console.log(`A energia mágica flui através das veias de ${nomePersonagem}, pronta para ser canalizada.`);
+} else {
+  console.log(`O poder físico de ${nomePersonagem} é sua maior arma.`);
+}
+
