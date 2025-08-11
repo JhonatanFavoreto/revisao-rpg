@@ -217,7 +217,7 @@ console.log("FIM DO CAPÍTULO - Prepare-se para o próximo nível da aventura!")
 
 
 // NOVOS ELEMENTOS PARA O CASTELO DA CASA ABANDONADO
-// Inventário mágico - primeira coleção arcana
+// Inventário mágico de Guts e sua equipe
 let inventario = ["Poção de Vida", "Espada Curta", "Armadura Berserker"];
 let aliados = ["Ichigo", "Mogh", "Ziegfried", "Claudinei", "Labubu Dieddy", "Vacivus"];
 let inimigosEncontrados = ["Goblin Sombrio", "Orc Berserker", "Dragão Menor"];
@@ -228,15 +228,15 @@ console.log(nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS");
 console.log("Após as vitórias dos níveis anteriores, nosso herói chegou ao castelo lendário...");
 console.log("Inventário inicial: " + inventario.length + " itens mágicos");
 
-// CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ABANDONADAS
+// CAPÍTULO 1: DESCOBERTA DE ITENS RAROS
 console.log("");
 console.log("CAPÍTULO 1: Os Baús da Casa Abandonada");
 
-// 3.5.1. Declaração e inicialização
+// Declaração e inicialização
 let pocoesEncontradas = ["Poção do poder", "Poção anti-fome", "Poção de visão noturna"];
 let armadilhasAtiradas = [];
 
-// 3.5.2. Acesso e modificação de elementos
+// Acesso e modificação de elementos
 console.log("Primeira poção encontrada: " + pocoesEncontradas[0]);
 console.log("Total de poções mágicas: " + pocoesEncontradas.length);
 
@@ -244,7 +244,7 @@ console.log("Total de poções mágicas: " + pocoesEncontradas.length);
 inventario[0] = "Poção de Vida Suprema";
 console.log(nomePersonagem + " aprimorou uma poção!");
 
-// 3.5.3. Métodos de array fundamentais
+// Métodos de array fundamentais
 inventario.push("Coroa de espinhos");
 console.log("Novo item adicionado! Inventário: " + inventario);
 
@@ -276,3 +276,75 @@ vidaAtual -= 10;
 }
 
 console.log("Exploração completa! XP: " + experiencia + " | Vida: " + vidaAtual);
+
+// CAPÍTULO 3: A UNIÃO DOS ALIADOS
+console.log("");
+console.log("CAPÍTULO 3: Reunindo os Aliados de Guts");
+
+// Recrutando aliados com for tradicional
+console.log(nomePersonagem +  `convoca seus aliados para a luta contra o BOSS:`);
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) {
+console.log("Com o poder mágico, " + aliado + " multiplica o poder da equipe!");
+ouro += 50;
+} else if (i === 1) {
+console.log("Como defensor principal, " + aliado + " fortalece a resistência da equipe!");
+vidaMaxima += 30;
+} else {
+console.log("Como especialista de lutas, " + aliado + " aprimora táticas de combate!");
+experiencia += 40;
+}
+}
+
+console.log("Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
+
+
+// === CAPÍTULO 4: A BATALHA FINAL DOS ARRAYS ===
+console.log("CAPÍTULO 4: Confronto com as Criaturas da vila");
+
+// Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Mago de fogo", "Mago de gelo", "Mago do vento"];
+let danoRecebido = [];
+
+console.log(nomePersonagem + " enfrenta " + inimigosBatalha.length + " inimigos fortes!");
+
+// Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 30) + 10;
+
+console.log("Rodada " + (i + 1) + " - Enfrentando: " + inimigo);
+console.log(nomePersonagem + " causa " + dano + " de dano!");
+
+danoRecebido.push(dano);
+
+// Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+console.log("Primeira vitória! Cristais fragmentados concedem bônus!");
+tesouroColetado.push("Fragmento de Cristal");
+} else if (i === 1) {
+console.log("Segunda batalha! As sombras drenam energia mágica, mas " + nomePersonagem + " resiste!");
+vidaAtual -= 15;
+} else {
+console.log("Batalha final! Os magos recuam! Vitória épica alcançada!");
+experiencia += 100;
+tesouroColetado.push("Platina da vila");
+}
+}
+
+// Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+danoTotal += danoRecebido[i];
+console.log("Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+
+console.log("Dano total causado: " + danoTotal);
+console.log("Tesouros coletados: " + tesouroColetado.length + " itens épicamente épicos!");
+
+
