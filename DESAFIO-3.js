@@ -348,3 +348,31 @@ console.log("Dano total causado: " + danoTotal);
 console.log("Tesouros coletados: " + tesouroColetado.length + " itens épicamente épicos!");
 
 
+// EPÍLOGO: O MESTRE DOS ARRAYS
+console.log("EPÍLOGO: " + nomePersonagem + " - CONQUISTADOR DO MONTE DOS MAGOS");
+
+// Estatísticas finais da jornada
+console.log("Estatísticas Finais do DESAFIO:");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + experiencia);
+console.log("• Vida restante: " + vidaAtual + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+// ADICIONE SUAS 10+ LINHAS ÉPICAS DE CONTINUAÇÃO AQUI
+console.log(` A JORNADA DE ${nomePersonagem} CONTINUA...`);
+console.log(`Após conquistar a vila dos magos, " ${nomePersonagem} evoluiu muito seu intelécto.`);
+console.log("O domínio sobre os itens mágicos, deu a sua equipe muita sabedoria de experiencia de batalha.");
+console.log("Os aldeões da vila, disseram-lhe segredos ancestrais, revelando padrões ocultos da realidade.");
+console.log("Aliados agora estão muito hypados para a próxima batalha.");
+console.log("O inventário deles estão lotados, cheio de itens para venda.");
+console.log(`Mas no poço da vila, novos desafios levavam ${nomePersonagem} e sua equipe.`);
+console.log("Rumores falavam que havia uma mina cheio de riquezas a baixo da vila.");
+console.log("E objetos legendários que guardariam os segredos da origem da humanidade.");
+console.log("A jornada estava longe do fim - era apenas o início de uma saga maior.");
+console.log("Pois " + nomePersonagem + " havia provado ser digno do herói da vila");
+console.log(`A JORNADA DE ${nomePersonagem}`);
+console.log("FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS!");
+
